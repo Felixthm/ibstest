@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Die 3 Meta-Tags oben *müssen* zuerst im head stehen; jeglicher sonstiger head-Inhalt muss *nach* diesen Tags kommen -->
+    <title>Meine Erste Website</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="canvasjs.min.js"></script>
+    <script src="webapp.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="persoenliches.html">Felix Bernhardt</a>
+            </div>
+            <div>
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="persoenliches.html">Pers&ouml;nliches</a></li>
+                    <li><a href="MeinStudium.html">Mein Studium</a></li>
+                    <li><a href="Datenschutz.html">Datenschutz</a></li>
+                    <li><a href="Impressum.html">Impressum</a></li>
+                    <li class="active"><a href="Webapp.html">Webapp</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+            <form class="navbar-form navbar-right" action="http://de.wikipedia.org/wiki/Spezial:Suche" role="search">
+                <fieldset>
+                    <legend class="sr-only">Einträge in der deutschen Wikipedia suchen</legend>
+                    <div class="input-group">
+                        <input id="wikipedia" class="form-control" type="text" data-validation-required-message="Bitte geben Sie einen Suchbegriff ein." required="" placeholder="Wikipedia-Suche" maxlength="50" name="search">
+                        <label class="sr-only" for="wikipedia">Wikipedia-Suche</label>
+                        <span class="input-group-btn">
+                            <input class="btn btn-default" type="submit" value="Artikel" name="go" role="button">
+                            <input class="btn btn-default" type="submit" value="Suche" name="fulltext" role="button">
+                        </span>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        </div>
+    </nav>
+    <a href="http://wave.webaim.org/report#/fbernhardtibshue1.cloudcontrolled.com">
+        <img class="bild" src="wai-AAA.gif" alt="WAI-AAA-Test"/>
+    </a><br>
+    <h1 class="header31">ArsNova Visualisierung</h1>
+    <p style="display: block; width: 100%; text-align: center; margin: 10px 0;">Diese Daten aktualisieren sich alle 30 Sekunden.</p>
+    <div id="sessionVisualisierung" class="chartContainer"></div>
+    <div id="questionVisualisierung" class="chartContainer"></div>
+    <div id="userVisualisierung" class="chartContainer"></div>
+</body>
+</html>
